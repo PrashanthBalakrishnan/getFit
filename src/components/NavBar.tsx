@@ -27,12 +27,12 @@ export const NavBar: React.FC<NavBarProps> = ({
             className={`${navBackGround} fixed top-0 z-50 w-full bg-gray-100 py-6`}
         >
             <div className="flex-between mx-auto flex w-5/6 ">
-                <a href="home" className="flex items-center gap-1">
+                <div className="flex items-center gap-1">
                     <CgGym size={50} className={`${navBackGround}`} />
                     <p className="text-2xl font-bold">
                         GET<span className="text-accent100">FIT</span>
                     </p>
-                </a>
+                </div>
                 <div className="flex items-center justify-center">
                     <div className="sm:flex-between hidden gap-8 text-sm sm:flex">
                         <Link
