@@ -118,7 +118,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setSelectedPage }) => {
 
                             <button
                                 type="submit"
-                                className="rounded-lg bg-black px-20 py-3 text-white transition duration-500 md:mt-5"
+                                className="rounded-lg bg-black px-20 py-3 text-white transition transition duration-300 duration-500 hover:text-accent100 md:mt-5"
                             >
                                 SUBMIT
                             </button>
