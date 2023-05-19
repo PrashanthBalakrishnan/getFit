@@ -8,13 +8,6 @@ import { motion } from 'framer-motion'
 import BenfitItem from './BenfitItem'
 import { SelectedPage } from '../utils/Types'
 
-const container = {
-    hidden: {},
-    visible: {
-        transition: { staggerChildren: 0.2 },
-    },
-}
-
 const benefitData = [
     {
         id: 1,
