@@ -44,7 +44,10 @@ const Benefits: React.FC<BenefitsProps> = ({ setSelectedPage }) => {
                 onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
             >
                 <div className="text-center md:my-5 md:w-3/5 md:text-left">
-                    <HeadingText>More than just a GYM.</HeadingText>
+                    <HeadingText>
+                        More than just a{' '}
+                        <span className="text-accent100">GYM</span>.
+                    </HeadingText>
                 </div>
                 <div className="mt-5 justify-between gap-8 lg:flex">
                     {benefitData.map((benefit) => (
@@ -66,8 +69,8 @@ const Benefits: React.FC<BenefitsProps> = ({ setSelectedPage }) => {
                         <div className="mt-10 text-center">
                             <div>
                                 <HeadingText>
-                                    MILLION OF HAPPY MEMMBERS GETTING{' '}
-                                    <span>FIT</span>
+                                    MILLION OF HAPPY MEMBERS GETTING{' '}
+                                    <span className="text-accent100">FIT</span>
                                 </HeadingText>
                                 <p className="py-3 text-lg">
                                     Remember, joining our world-class gym not

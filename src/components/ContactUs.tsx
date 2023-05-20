@@ -42,7 +42,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setSelectedPage }) => {
                 <div className="md:w-3/5">
                     <HeadingText>
                         <span className="text-primary-500">JOIN NOW</span> TO
-                        GET IN SHAPE
+                        GET IN <span className="text-accent100">SHAPE</span>
                     </HeadingText>
                     <p className="my-5 md:text-lg">
                         Don't wait any longer - join us today and experience the
@@ -70,7 +70,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setSelectedPage }) => {
                                 })}
                             />
                             {errors.name && (
-                                <p className="mt-1 text-rose-600">
+                                <p className="-mt-4 text-rose-600">
                                     {errors.name.type === 'required' &&
                                         'This field is required.'}
                                     {errors.name.type === 'maxLength' &&
@@ -89,7 +89,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setSelectedPage }) => {
                                 })}
                             />
                             {errors.email && (
-                                <p className="mt-1 text-rose-600">
+                                <p className="-mt-4 text-rose-600">
                                     {errors.email.type === 'required' &&
                                         'This field is required.'}
                                     {errors.email.type === 'pattern' &&
@@ -108,7 +108,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setSelectedPage }) => {
                                 })}
                             />
                             {errors.message && (
-                                <p className="mt-1 text-rose-600">
+                                <p className="-mt-5 text-rose-600">
                                     {errors.message.type === 'required' &&
                                         'This field is required.'}
                                     {errors.message.type === 'maxLength' &&

@@ -19,6 +19,7 @@ export const NavBar: React.FC<NavBarProps> = ({
         ? ''
         : 'bg-gray-950 text-white transition duration-200'
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false)
+
     const handleMenuToggle = () => {
         setIsMenuToggled((prev) => !prev)
     }
@@ -39,25 +40,21 @@ export const NavBar: React.FC<NavBarProps> = ({
                             page="Home"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
-                            handleMenuToggle={handleMenuToggle}
                         />
                         <Link
                             page="Benefits"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
-                            handleMenuToggle={handleMenuToggle}
                         />
                         <Link
                             page="Our Classes"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
-                            handleMenuToggle={handleMenuToggle}
                         />
                         <Link
                             page="Contact Us"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
-                            handleMenuToggle={handleMenuToggle}
                         />
                     </div>
                 </div>
