@@ -5,7 +5,7 @@ type Props = {
     page: string
     selectedPage: SelectedPage
     setSelectedPage: (value: SelectedPage) => void
-    handleMenuToggle: () => void
+    handleMenuToggle?: () => void
 }
 
 const Link = ({
@@ -26,7 +26,7 @@ const Link = ({
             href={`#${lowerCasePage}`}
             onClick={() => {
                 setSelectedPage(lowerCasePage)
-                handleMenuToggle()
+                if (handleMenuToggle) handleMenuToggle()
             }}
         >
             {page}
