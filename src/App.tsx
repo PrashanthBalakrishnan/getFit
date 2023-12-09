@@ -32,11 +32,13 @@ const App = () => {
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
             />
-            <Hero setSelectedPage={setSelectedPage} />
-            <Sponsors setSelectedPage={setSelectedPage} />
-            <Benefits setSelectedPage={setSelectedPage} />
-            <OurClasses setSelectedPage={setSelectedPage} />
-            <ContactUs setSelectedPage={setSelectedPage} />
+            <main>
+                <Hero setSelectedPage={setSelectedPage} />
+                <Sponsors setSelectedPage={setSelectedPage} />
+                <Benefits setSelectedPage={setSelectedPage} />
+                <OurClasses setSelectedPage={setSelectedPage} />
+                <ContactUs setSelectedPage={setSelectedPage} />
+            </main>
             <Footer />
         </div>
     )

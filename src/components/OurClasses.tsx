@@ -15,37 +15,44 @@ const classData = [
     {
         img: HIIT,
         title: 'HIIT',
+        alt: 'People doing High Intensity Interval Training',
         desc: 'These classes focus on short bursts of intense exercise followed by periods of active recovery, designed to maximize calorie burn, increase endurance, and improve overall fitness.',
     },
     {
         img: Yoga,
         title: 'Yoga and Pilates',
+        alt: 'People doing yoga',
         desc: 'These classes focus on improving flexibility, strength, and balance through a series of controlled movements, poses, and breathing exercises. They promote relaxation, mindfulness, and mind-body connection.',
     },
     {
         img: Cycling,
         title: 'Cycling',
+        alt: 'group of people indoor cycling',
         desc: 'These classes simulate outdoor cycling using stationary bikes. Led by an instructor, they provide a challenging cardio workout that strengthens the legs, improves endurance, and burns calories.',
     },
     {
         img: Dance,
         title: 'Dance',
+        alt: 'People dancing',
         desc: 'These classes combine dance moves with aerobic exercises to create an energetic and fun workout. They provide cardiovascular benefits, improve coordination, and help burn calories.',
     },
     {
         img: Strength,
         title: 'Strength Training',
+        alt: 'People doing strength training',
         desc: 'These classes focus on building strength and muscle tone using a variety of resistance exercises such as weightlifting, bodyweight exercises, and functional training. They help improve overall body composition and increase metabolism.',
     },
     {
         img: Boxing,
         title: 'Boxing/Kickboxing',
+        alt: 'People doing boxing',
         desc: 'These classes incorporate boxing or kickboxing techniques, such as punches, kicks, and combinations, to improve cardiovascular fitness, build strength, and enhance self-defense skills.',
     },
 
     {
         img: Meditation,
         title: 'Meditation',
+        alt: 'People meditating',
         desc: 'These classes focus on relaxation, stress reduction, and mental well-being. They typically include guided meditation, breathing exercises, and techniques to promote mindfulness and inner peace.',
     },
 ]
@@ -80,7 +87,7 @@ const OurClasses: React.FC<OurClassesProps> = ({ setSelectedPage }) => {
     }, [activeItem])
 
     return (
-        <section id="ourclasses" className="bg-gray-100 py-10">
+        <section id="ourclasses" className="bg-gray-200 py-10">
             <motion.div
                 className="mx-auto h-full w-5/6"
                 onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
@@ -110,7 +117,7 @@ const OurClasses: React.FC<OurClassesProps> = ({ setSelectedPage }) => {
                                         <img
                                             className="absolute right-0   h-full w-24 max-w-none object-cover opacity-80  md:left-1/2 md:top-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2 md:-translate-y-1/2"
                                             src={item.img}
-                                            alt={item.title}
+                                            alt={item.alt}
                                         />
                                         <div
                                             className={classNames(

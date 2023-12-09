@@ -11,7 +11,7 @@ const Hero: React.FC<HeroProps> = ({ setSelectedPage }) => {
     return (
         <section
             id="home"
-            className="mt-24 gap-16 bg-gray-100  md:mt-0 md:h-[80vh] md:py-10 md:pb-0"
+            className="mt-24 h-[150vh] gap-16 bg-gray-100 md:mt-0 md:h-[80vh] md:py-10 md:pb-0"
         >
             {/* Image and main header */}
             <motion.div
@@ -31,13 +31,13 @@ const Hero: React.FC<HeroProps> = ({ setSelectedPage }) => {
                     }}
                 >
                     <div className="flex flex-col items-center justify-center md:block">
-                        <h2
+                        <h1
                             className="text-center text-4xl font-bold tracking-tight text-gray-900 md:mt-0 md:text-left md:text-5xl
                         lg:text-6xl"
                         >
-                            GET<span className="text-accent100">FIT</span>
-                        </h2>
-                        <p className="my-6 text-center text-lg text-gray-500 sm:text-left lg:text-xl ">
+                            GET<span className="text-rose-500">FIT</span>
+                        </h1>
+                        <p className="my-6 text-center text-lg text-gray-700 sm:text-left lg:text-xl ">
                             Welcome to Unrivaled Gym, where we offer
                             unparalleled training and fitness classes that will
                             help you achieve the body of your dreams. Our
@@ -77,6 +77,7 @@ const Hero: React.FC<HeroProps> = ({ setSelectedPage }) => {
                     <img
                         className="h-full w-full object-cover"
                         src={HeroImage}
+                        alt="two fitness trainers"
                     />
                 </motion.div>
             </motion.div>

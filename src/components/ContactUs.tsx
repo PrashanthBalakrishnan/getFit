@@ -42,7 +42,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setSelectedPage }) => {
                 <div className="md:w-3/5">
                     <HeadingText>
                         <span className="text-primary-500">JOIN NOW</span> TO
-                        GET IN <span className="text-accent100">SHAPE</span>
+                        GET IN <span className="text-rose-500">SHAPE</span>
                     </HeadingText>
                     <p className="my-5 md:text-lg">
                         Don't wait any longer - join us today and experience the
@@ -118,7 +118,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ setSelectedPage }) => {
 
                             <button
                                 type="submit"
-                                className="rounded-lg bg-black px-20 py-3 text-white transition transition duration-300 duration-500 hover:text-accent100 md:mt-5"
+                                className="rounded-lg bg-black px-20 py-3 text-white transition transition duration-300 duration-500 hover:text-rose-500 md:mt-5"
                             >
                                 SUBMIT
                             </button>

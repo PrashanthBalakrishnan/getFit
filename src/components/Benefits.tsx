@@ -13,6 +13,7 @@ const benefitData = [
         id: 1,
         img: TrainingPrograms,
         title: 'Personalized Training Programs',
+        alt: 'Fitness trainer helping a client',
         description:
             "At GetFit, we understand that everyone has unique fitness goals and requirements. We offer personalized training programs tailored to your specific needs, whether you're a beginner looking to kickstart your fitness journey or an experienced athlete aiming to push your limits. Our expert trainers will assess your current fitness level, develop a customized workout plan, and provide ongoing guidance and support to help you achieve optimal results.",
     },
@@ -20,6 +21,7 @@ const benefitData = [
         id: 2,
         img: Facilities,
         title: 'State-of-the-Art Facilities and Equipment',
+        alt: 'Treadmills in a gym',
         description:
             'GetFit gym is equipped with state-of-the-art facilities and cutting-edge exercise equipment to enhance your workout experience. From advanced cardio machines and strength training equipment to functional training areas and specialized studios, we provide everything you need to maximize your fitness potential. Our commitment to maintaining top-notch facilities ensures that you can enjoy a comfortable and motivating environment for your workouts.',
     },
@@ -27,6 +29,7 @@ const benefitData = [
         id: 3,
         img: FitnessClasses,
         title: 'Diverse Fitness Classes',
+        alt: 'People doing strength training',
         description:
             "We offer a wide range of fitness classes to cater to different interests and fitness levels. Whether you're into high-intensity interval training (HIIT), yoga, spinning, boxing, or dance workouts, we have a class for you. Led by experienced instructors, our diverse fitness classes provide both variety and challenge, helping you stay motivated and engaged in your fitness routine. With options for all ages and abilities, you can discover new workouts and find the ones that resonate with you, making your fitness journey enjoyable and sustainable.",
     },
@@ -46,7 +49,7 @@ const Benefits: React.FC<BenefitsProps> = ({ setSelectedPage }) => {
                 <div className="text-center md:my-5 md:w-3/5 md:text-left">
                     <HeadingText>
                         More than just a{' '}
-                        <span className="text-accent100">GYM</span>.
+                        <span className="text-rose-500">GYM</span>.
                     </HeadingText>
                 </div>
                 <div className="mt-5 justify-between gap-8 lg:flex">
@@ -54,6 +57,7 @@ const Benefits: React.FC<BenefitsProps> = ({ setSelectedPage }) => {
                         <BenfitItem
                             key={benefit.id}
                             img={benefit.img}
+                            alt={benefit.alt}
                             title={benefit.title}
                             desc={benefit.description}
                             setSelectedPage={setSelectedPage}
@@ -65,12 +69,13 @@ const Benefits: React.FC<BenefitsProps> = ({ setSelectedPage }) => {
                         <img
                             className="justify-center grayscale lg:w-[50%]"
                             src={BenefitsPageGraphic}
+                            alt="Person doing plank"
                         />
                         <div className="mt-10 text-center">
                             <div>
                                 <HeadingText>
                                     MILLION OF HAPPY MEMBERS GETTING{' '}
-                                    <span className="text-accent100">FIT</span>
+                                    <span className="text-rose-500">FIT</span>
                                 </HeadingText>
                                 <p className="py-3 text-lg">
                                     Remember, joining our world-class gym not
