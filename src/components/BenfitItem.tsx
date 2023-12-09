@@ -6,6 +6,7 @@ type BenefitItemProps = {
     title: string
     img: string
     desc: string
+    alt: string
     setSelectedPage: (value: SelectedPage) => void
 }
 
@@ -18,6 +19,7 @@ const BenfitItem: React.FC<BenefitItemProps> = ({
     title,
     img,
     desc,
+    alt,
     setSelectedPage,
 }) => {
     return (
@@ -28,11 +30,11 @@ const BenfitItem: React.FC<BenefitItemProps> = ({
                         <img
                             className="h-full w-full object-cover"
                             src={img}
-                            alt={title}
+                            alt={alt}
                         />
                     </div>
                 </div>
-                <h4 className="font-bold">{title}</h4>
+                <h3 className="font-bold">{title}</h3>
                 <p className="my-3">{desc}</p>
                 <AnchorLink
                     className="font-bold hover:underline"

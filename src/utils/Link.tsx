@@ -18,10 +18,8 @@ const Link = ({
 
     return (
         <AnchorLink
-            className={`${
-                selectedPage === lowerCasePage ? 'text-accent100' : ''
-            }
-            text-lg font-semibold transition  duration-300  hover:text-accent100
+            className={`${selectedPage === lowerCasePage ? 'text-rose-500' : ''}
+            text-lg font-semibold transition  duration-300  hover:text-rose-500
       `}
             href={`#${lowerCasePage}`}
             onClick={() => {
