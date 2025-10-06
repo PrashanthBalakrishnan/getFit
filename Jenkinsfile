@@ -13,7 +13,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('git push') {
       steps {
         sh 'git push'
       }
