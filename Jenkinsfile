@@ -7,17 +7,5 @@ pipeline {
       }
     }
 
-    stage('install packages') {
-      steps {
-        sh 'npm i -y'
-      }
-    }
-
-    stage('git push') {
-      steps {
-        sh 'git push'
-      }
-    }
-
   }
 }
